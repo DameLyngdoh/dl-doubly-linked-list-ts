@@ -6,7 +6,7 @@ A doubly linked-list implementation for TypeScript.
 
 ### NPM
 ```sh
-npm install dl-doubly-linked-list
+npm install dl-doubly-linked-list-ts
 ```
 
 ### Build
