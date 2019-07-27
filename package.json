@@ -1,0 +1,29 @@
+{
+    "name": "dl-doubly-linked-list-ts",
+    "version": "1.0.0",
+    "description": "A Typescript library for doubly linked-list implementation.",
+    "scripts": {
+      "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "keywords": [
+      "linked-list",
+      "data-strucutre",
+      "data structure",
+      "typescript",
+      "doubly-linked-list",
+      "doubly linked-list",
+      "linked list"
+    ],
+    "author": "Dame Lyngdoh <damelyngdoh@outlook.com>",
+    "license": "MIT",
+    "homepage": "https://github.com/DameLyngdoh/dl-doubly-linked-list-ts",
+    "repository": {
+        "type" : "git",
+        "url" : "https://github.com/DameLyngdoh/dl-doubly-linked-list-ts.git"
+    },
+    "bugs": {
+        "url": "https://github.com/DameLyngdoh/dl-doubly-linked-list-ts/issues",
+        "email": "damelyngdoh@outlook.com"
+    }
+}
+  
