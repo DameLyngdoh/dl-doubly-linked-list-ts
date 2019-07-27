@@ -30,6 +30,53 @@
                <div class="content getting-started">
                    <div class="content-data">
 
+<h3 id="doubly-linked-list-for-typescript">Doubly Linked List for TypeScript</h3>
+<p>A doubly linked-list implementation for TypeScript.</p>
+<h2 id="installation">Installation</h2>
+<h3 id="npm">NPM</h3>
+<p><code>sh
+npm install dl-doubly-linked-list</code></p>
+<h3 id="build">Build</h3>
+<p><code>sh
+tsc</code>
+Built JS files are in <code>./js</code>.</p>
+<h2 id="description">Description</h2>
+<h3 id="node">Node</h3>
+<p>A node is a vertex in the list, implemented in the <code>DLNode</code> class and has three fields:</p>
+<p>|Field|Type|Getter|Setter|Description|
+|-|-|-|-|-|
+|<code>data</code>|<code>T</code> (generic)|Yes|Yes|Data object contained in the node.|
+|<code>next</code>|<code>DLNode | null</code>|Yes|Yes|Reference to next node, <code>null</code> if its last node.|
+|<code>preious</code>|<code>DLNode | null</code>|Yes|Yes|Reference to previous node. <code>null</code> if its first node.|</p>
+<h3 id="doubly-linked-list">Doubly Linked List</h3>
+<p>The doubly linked-list implementation is present in the <code>DoublyLinkedList</code> class. It has three fields:</p>
+<p>|Field|Type|Getter|Setter|Description|
+|-|-|-|-|-|
+|<code>length</code>|<code>number</code>|Yes|No|Number of nodes present in the list.|
+|<code>start</code>|<code>DLNode | null</code>|Yes|Yes|Reference to start node, <code>null</code> if list is empty.|
+|<code>end</code>|<code>DLNode | null</code>|Yes|Yes|Reference to last node. <code>null</code> if list is empty.|</p>
+<h2 id="documentation">Documentation</h2>
+<p>Please refer to <code>doc/index.html</code> for the complete documentation and API reference. The documentation for this project was generated using <a href="https://compodoc.app/">Compodoc</a>.</p>
+<h2 id="demo">Demo</h2>
+<p>```typescript
+import { DoublyLinkedList, DLNode } from &quot;./node_modules/dl-doubly-linked-list&quot;;</p>
+<p>let list : DoublyLinkedList<any> = new DoublyLinkedList();</p>
+<p>let nodes : DLNode<any>[] = [];
+for(let i=0; i&lt;10; i++) {
+    nodes[i] = new DLNode(); 
+    nodes[i].data = i * i;
+    list.insertStart(nodes[i]);
+}</p>
+<p>// Inserting new node at the end
+let newNode : DLNode<any> = new DLNode();
+newNode.data = 300;
+list.insert( newNode, 6 );</p>
+<p>// Deleting a node
+list.delete(4);</p>
+<p>// Get array of the nodes
+let array = list.toArray();</p>
+<p>console.log(array);
+```</p>
 
 
 
