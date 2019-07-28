@@ -32,7 +32,7 @@ export class DoublyLinkedList<T> {
         return this._end;
     }
     get length() : number {
-        return this._length;
+        return this._length + 1;
     }
 
     set start( start : DLNode<T> | null ) {

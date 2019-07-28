@@ -1,8 +1,8 @@
 {
     "name": "dl-doubly-linked-list-ts",
-    "version": "1.0.1",
+    "version": "1.0.3",
     "description": "A Typescript library for doubly linked-list implementation.",
-    "main": "./dist/doublyLinkedList.js",
+    "main": "doublyLinkedList.js",
     "scripts": {
       "test": "echo \"Error: no test specified\" && exit 1"
     },
