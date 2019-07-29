@@ -13,7 +13,6 @@ npm install dl-doubly-linked-list-ts
 ```sh
 tsc
 ```
-Built JS files are in `./js`.
 
 ## Description
 
